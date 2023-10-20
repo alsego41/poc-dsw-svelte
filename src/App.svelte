@@ -1,11 +1,19 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
+  // import svelteLogo from './assets/svelte.svg'
+  // import viteLogo from '/vite.svg'
+  // import Counter from './lib/Counter.svelte'
+  function handleForm() {
+    
+  }
 </script>
 
 <main>
-  <div>
+  <form on:submit={handleForm}>
+    <label for="newitem">Nuevo item</label>
+    <input type="text" name="newitem"/>
+    <button>Agregar</button>
+  </form>
+  <!-- <div>
     <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
       <img src={viteLogo} class="logo" alt="Vite Logo" />
     </a>
@@ -25,7 +33,7 @@
 
   <p class="read-the-docs">
     Click on the Vite and Svelte logos to learn more
-  </p>
+  </p> -->
 </main>
 
 <style>
