@@ -1,7 +1,7 @@
 <script lang="ts">
   import { v4 as uuidv4 } from 'uuid'
   let inputItem: string = ''
-  let todos = JSON.parse(localStorage.getItem("todos") || "[{}]") || undefined
+  let todos = JSON.parse(localStorage.getItem("todos") || "[]") || []
   function handleForm(e: any) {
     e.preventDefault()
     if (inputItem.trim() !== "" ){
@@ -30,7 +30,6 @@
       return todo
     })
     localStorage.setItem("todos", JSON.stringify(todos))
-
   }
 
   function handleDelete(e: any) {
@@ -59,8 +58,15 @@
           <button data-id={todo.id} on:click={handleDelete}>Delete</button>
         </div>
         {/each}
+        {:else} 
+        <div class="todo-item">
+          <li>No hay nada para hacer!</li>
+        </div>
       {/if}
     </ul>
+  </div>
+  <div class="todo-list-completed">
+
   </div>
 </main>
 
