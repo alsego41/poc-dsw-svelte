@@ -46,11 +46,7 @@
         autofocus={true}
       />
       <button>
-        <img
-          src="./src/assets/plus-solid.svg"
-          alt="Boton agregar"
-          class="add-img"
-        />
+        <img src="/plus-solid.svg" alt="Boton agregar" class="add-img" />
       </button>
     </div>
   </form>
