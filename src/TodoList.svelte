@@ -116,7 +116,7 @@
         {/if}
       {/each}
     {:else}
-      <div class="todo-item">
+      <div class="todo-item info">
         <li>No hay nada para hacer!</li>
       </div>
     {/if}
