@@ -1,9 +1,16 @@
 <script lang="ts">
+  import { writable, derived } from "svelte/store";
   import { v4 as uuidv4 } from "uuid";
   import TodoList from "./TodoList.svelte";
   let inputItem: string = "";
-  let count: number;
   let todos: any = JSON.parse(localStorage.getItem("todos") || "[]") || [];
+
+  const count = writable(0);
+  let count_value: number;
+  count.subscribe((value) => {
+    count_value = value;
+  });
+
   countFilter();
 
   function handleForm(e: any) {
@@ -22,7 +29,7 @@
   }
 
   function countFilter() {
-    count = todos.filter((todo: any) => todo.completed === false).length;
+    count.set(todos.filter((todo: any) => todo.completed === false).length);
   }
 </script>
 
@@ -47,7 +54,7 @@
       </button>
     </div>
   </form>
-  <TodoList {todos} {count} {countFilter} />
+  <TodoList {todos} {count_value} {countFilter} />
 </main>
 
 <style>

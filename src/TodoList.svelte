@@ -1,6 +1,6 @@
 <script lang="ts">
   export let todos: any;
-  export let count: number;
+  export let count_value: number;
   export let countFilter: any;
   let editableTodoID: string = "";
   let editInput: string = "";
@@ -56,7 +56,7 @@
   <h2>Tareas</h2>
   <ul>
     {#if todos.length > 0}
-      {#if count === 0}
+      {#if count_value === 0}
         <div class="todo-item info">
           <li>No hay nada para hacer!</li>
         </div>
