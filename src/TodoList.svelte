@@ -57,7 +57,7 @@
   <ul>
     {#if todos.length > 0}
       {#if count === 0}
-        <div class="todo-item">
+        <div class="todo-item info">
           <li>No hay nada para hacer!</li>
         </div>
       {/if}

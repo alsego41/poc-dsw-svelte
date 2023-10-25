@@ -27,6 +27,13 @@ ul {
 	margin: 0 auto;
 	align-items: center;
 }
+.todo-item.info li {
+	grid-column: 2/3;
+	overflow: auto;
+	white-space: nowrap;
+	text-overflow: unset;
+	text-align: center;
+}
 .todo-item li {
 	overflow: hidden;
 	white-space: nowrap;
