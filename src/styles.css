@@ -28,8 +28,8 @@ ul {
 	align-items: center;
 }
 .todo-item.info li {
-	grid-column: 2/3;
-	overflow: auto;
+	grid-column: 1/5;
+	overflow: unset;
 	white-space: nowrap;
 	text-overflow: unset;
 	text-align: center;
