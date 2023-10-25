@@ -82,7 +82,7 @@
               />
               <button on:click={() => updateTodo(todo.id)}>
                 <img
-                  src="./src/assets/floppy-disk-solid.svg"
+                  src="/floppy-disk-solid.svg"
                   alt="Boton guardar"
                   class="save-img"
                 />
@@ -99,14 +99,14 @@
               </li>
               <button on:click={() => handleEdit(todo.id)}>
                 <img
-                  src="./src/assets/pencil-solid.svg"
+                  src="/pencil-solid.svg"
                   alt="Boton editar"
                   class="edit-img"
                 />
               </button>
               <button on:click={() => handleDelete(todo.id)}>
                 <img
-                  src="./src/assets/trash-solid.svg"
+                  src="/trash-solid.svg"
                   alt="Boton borrar"
                   class="del-img"
                 />
@@ -147,7 +147,7 @@
               />
               <button on:click={() => updateTodo(todo.id)}>
                 <img
-                  src="./src/assets/floppy-disk-solid.svg"
+                  src="/floppy-disk-solid.svg"
                   alt="Boton guardar"
                   class="save-img"
                 />
@@ -164,14 +164,14 @@
               </li>
               <button on:click={() => handleEdit(todo.id)}>
                 <img
-                  src="./src/assets/pencil-solid.svg"
+                  src="/pencil-solid.svg"
                   alt="Boton editar"
                   class="edit-img"
                 />
               </button>
               <button on:click={() => handleDelete(todo.id)}>
                 <img
-                  src="./src/assets/trash-solid.svg"
+                  src="/trash-solid.svg"
                   alt="Boton borrar"
                   class="del-img"
                 />
