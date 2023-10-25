@@ -1,0 +1,52 @@
+.todo-new {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+}
+.user-input {
+	padding: 10px;
+	width: 60%;
+}
+h2 {
+	text-decoration: underline;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.todo-item {
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr 1fr;
+	column-gap: 5px;
+	max-width: 90%;
+	margin: 0 auto;
+	align-items: center;
+}
+.todo-item li {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: left;
+}
+.todo-item button {
+	justify-self: end;
+}
+.completed-true {
+	color: rgb(116, 197, 100);
+	text-decoration: line-through;
+}
+.completed-false {
+	color: rgb(255, 209, 117);
+}
+.del-img,
+.add-img,
+.edit-img,
+.save-img {
+	width: 15px;
+	fill: #ffffff;
+}
